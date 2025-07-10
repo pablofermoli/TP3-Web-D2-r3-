@@ -592,6 +592,82 @@ button {
 
 /** end smartwatch-views section **/
 
+/** personalizables section **/
+
+.looks {
+     background: #ededed;
+     padding: 198px 0px 00px 0px;
+     border-bottom: #000 solid 0cap;
+     padding: 130px 0 90px 0;
+}
+
+.looks .about_img {
+     margin-left: 00px;
+}
+
+.looks .titlepage::before {
+     position: absolute;
+     content: "";
+     width: 220px;
+     height: 411px;
+     right: 00px;
+     background: url(../images/about_right_cross.jpg);
+     background-repeat: no-repeat;
+     top: -27px;
+     z-index: -1;
+}
+
+.looks .about_img figure {
+     margin: 0;
+}
+
+.titlepage .regular { /* Estilos para palabras individuales en títulos */
+  font-weight: 400;
+}
+
+.titlepage .bold {
+  font-weight: 700;
+}
+
+.looks .titlepage h2 {
+  font-size: 36px;
+  font-weight: bold;
+  font-weight: normal;
+  text-transform: none;
+  margin-bottom: 10px;
+  position: relative;
+  display: inline-block;
+}
+
+.looks .titlepage {
+     padding-left: 00px;
+     border: none;
+     padding: 00px 00px;
+     z-index: 10018;
+     background: none;
+     margin-right: 40px;
+}
+
+.looks .titlepage p {
+     
+     color: #2a2a2c;
+     font-size: 17px;
+     
+     font-weight: 400;  
+     padding-top: 00px;
+}
+
+.looks .read_more {
+     border: #1a1a1a solid 0px;
+     color: #1a1a1a;
+     font-weight: 500;
+     margin-top: 44px;
+     margin-bottom: 10px;
+}
+
+
+/** end about section **/
+
 /** Our  Glasses section **/
 
 .glasses {
