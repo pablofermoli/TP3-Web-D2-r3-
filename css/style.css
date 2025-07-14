@@ -258,7 +258,7 @@ button {
 
 .navigation.navbar {
      float: right;
-     background: linear-gradient(to right, #da8b60, #9271b3);
+     background: linear-gradient(to right, #da8b60, #e7bf8e);
      clear: both;
      padding: 23px 25px !important;
      border-radius: 64px;
@@ -334,7 +334,7 @@ button {
 .text-bg h1 {
      color: #070404;
      font-size: 60px;
-     line-height: 40px;
+     line-height: 80px;
      padding-bottom: 45px;
      font-weight: 600;
      text-transform: n
@@ -493,8 +493,8 @@ button {
 .about {
      background: #ededed;
      border-bottom: #000 solid 0cap;
-     padding-top: 30px;
-     padding-bottom:70px
+     padding-top: 100px;
+     padding-bottom:100px
 }
 
 .about .about_img {
@@ -580,7 +580,7 @@ button {
 .smartwatch-view-item img {
   max-width: 100%;
   height: auto;
-  margin-bottom: 10px;
+  margin-bottom: 50px;
 }
 
 .smartwatch-view-item p {
@@ -597,8 +597,8 @@ button {
 .looks {
      background: #ededed;
      border-bottom: #000 solid 0cap;
-     padding-top: 30px;
-     padding-bottom: 70px;
+     padding-top: 60px;
+     padding-bottom: 100px;
 }
 
 .looks .about_img {
@@ -666,12 +666,12 @@ button {
 }
 
 
-/** end about section **/
+/** end personalizable section **/
 
 /* Sección general */
 .watch-section {
   background: linear-gradient(to bottom, #f2a677, #ededed);
-  padding: 60px 0;
+  padding: 50px 0;
   text-align: center;
 }
 
@@ -690,23 +690,37 @@ button {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
-/* Pastilla degradada */
+/* Pastilla efecto blur y biselado */
 .usage-caption {
   position: absolute;
-  bottom: 12px;
+  bottom: 64px;
   left: 50%;
   transform: translateX(-50%);
-  width: 110%; /* más ancho que la imagen */
+  width: 110%;
   max-width: 360px;
-  background: linear-gradient(to bottom, #f2a677, #9286a8);
   padding: 18px 16px;
   border-radius: 18px;
-  color: white;
   font-size: 15px;
   font-weight: 500;
   text-align: center;
-  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15);
   z-index: 2;
+
+  /* Fondo grisáceo transparente con blur */
+  background: rgba(40, 40, 40, 0.4);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+
+  /* Biselado suave en degrade */
+  border: 1px solid transparent;
+  background-clip: padding-box;
+  box-shadow:
+    inset 0 1px 3px rgba(255, 255, 255, 0.35),   /* arriba (claro) */
+    inset 0 -1px 3px rgba(255, 255, 255, 0.2),   /* abajo (claro) */
+    inset 1px 0 2px rgba(0, 0, 0, 0.3),          /* izquierda (oscuro) */
+    inset -1px 0 2px rgba(0, 0, 0, 0.3),         /* derecha (oscuro) */
+    0 4px 14px rgba(0, 0, 0, 0.15);              /* sombra externa */
+
+  color: white;
 }
 
 /* Espacio visual desde el tercio inferior */
@@ -725,302 +739,84 @@ button {
 
 
 
-/** Our  Glasses section **/
 
-.glasses {
-     background: #fff;
-     margin-top: 90px;
+
+
+/** About Section - Conectividad **/
+
+.Conectividad {
+  background: #ededed;
+  padding: 100px 0;
+  margin-bottom: 50px
 }
 
-.glasses .titlepage {
-     text-align: center;
-     padding-bottom: 60px;
+.Conectividad .about_img figure {
+  margin: 0;
+  text-align: center;
 }
 
-.glasses .titlepage p {
-     font-size: 17px;
-     line-height: 30px;
-     font-weight: 400;
-     padding-top: 10px;
+.Conectividad .about_img img {
+  max-width: 100%;
+  height: auto;
 }
 
-.blu {
-     font-size: 30px;
-     font-weight:lighter;
-     line-height: 100px;
-     color: #707070;
-     text-transform: initial;
-     
+.titlepage {
+  padding-left: 30px;
 }
 
-.glasses .glasses_box {
-     text-align: center;
-     border: #555556 solid 1px;
-     border-radius: 2px;
-     padding: 120px 0px 30px 0px;
-     margin-bottom: 30px;
+.Conectividad .titlepage h2 {
+  font-size: 36px;
+  font-weight: 400;
+  margin-bottom: 30px;
 }
 
-.glasses .glasses_box figure {
-     margin: 0;
+.Conectividad .bold {
+  font-weight: 700;
+  color: #000;
 }
 
-.glasses .glasses_box h3 {
-     color: #100d0d;
-     font-size: 22px;
-     line-height: 20px;
-     padding: 70px 0px 9px 0px;
+.feature-item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 20px;
+  gap: 15px;
 }
 
-.glasses .glasses_box p {
-     color: #2a2a2c;
-     font-size: 18px;
-     line-height: 28px;
-     font-weight: 400;
+.feature-item img {
+  width: 28px;
+  height: 28px;
+  flex-shrink: 0;
+  margin-top: 2px;
 }
 
-.glasses .read_more {
-     border: #1a1a1a solid 2px;
-     font-weight: 500;
-     display: block;
-     margin: 0 auto;
-     margin-top: 44px;
+.feature-item p {
+  margin: 0;
+  font-size: 17px;
+  color: #2a2a2c;
+  line-height: 1.4;
 }
 
+/** end Section - Conectividad **/
 
-/** end Our  Glasses section **/
+/* Responsive */
+@media (max-width: 768px) {
+  .titlepage {
+    padding-left: 0;
+    padding-top: 30px;
+  }
 
-
-/** Our shop section **/
-
-.shop {
-     margin-top: 90px;
-     background: #fefdf9;
-     border-top: #f2f1ed solid 1px;
-     border-bottom: #f2f1ed solid 1px;
+  .feature-item {
+    flex-direction: row;
+    align-items: flex-start;
+  }
 }
-
-.shop .shop_img figure {
-     margin: 0;
-}
-
-.shop .shop_img figure img {
-     width: 100%;
-}
-
-.padding_right0 {
-     padding-right: 0;
-}
-
-.shop .max_width {
-     text-align: left;
-     background: #030404;
-     height: 100%;
-     padding-top: 86px;
-     padding-left: 50px;
-     padding-bottom: 90px;
-     display: flex;
-     flex-wrap: wrap;
-}
-
-.shop .titlepage {
-     max-width: 612px;
-     width: 100%;
-     float: left;
-}
-
-.shop .titlepage h2 {
-     color: #fff;
-     border-bottom: #fff solid 1px;
-     padding-bottom: 10px;
-     float: left;
-     clear: both;
-}
-
-.shop .titlepage p {
-     color: #fff;
-     font-size: 17px;
-     line-height: 30px;
-     padding: 40px 0px 80px 0;
-     width: 100%;
-     display: inline-block;
-}
-
-.shop .titlepage .read_more {
-     color: #fff !important
-}
-
-
-/** end Our shop section **/
-
-
-/** clients section **/
-
-.clients {
-     padding: 90px 0 70px 0;
-}
-
-.clients .titlepage {
-     text-align: center;
-     padding-bottom: 60px;
-}
-
-.clients .titlepage p {
-     color: #2a2a2c;
-     font-size: 17px;
-     line-height: 29px;
-     padding-top: 10px;
-}
-
-.clients_box h3 {
-     color: #2a2a2c;
-     font-size: 26px;
-     line-height: 30px;
-     padding-top: 23px;
-     font-weight: 600;
-}
-
-.clients_box p {
-     color: #2a2a2c;
-     font-size: 17px;
-     line-height: 30px;
-}
-
-.clients_Carousel .carousel-caption {
-     position: inherit;
-     padding: 0;
-}
-
-.clients_box {
-     border: #606060 solid 1px;
-     padding: 40px 32px 40px 0px;
-     float: left;
-     text-align: left;
-     margin-left: 89px;
-}
-
-.clients_box figure {
-     margin: 0;
-     float: left;
-     margin-left: -102px;
-     padding-right: 30px;
-}
-
-#myCarousel .carousel-indicators {
-     bottom: -70px;
-}
-
-#myCarousel .carousel-indicators li {
-     width: 20px;
-     height: 20px;
-     border-radius: 20px;
-     background: #111;
-}
-
-#myCarousel .carousel-indicators .active {
-     background: #8c8a8a;
-}
-
-#myCarousel .carousel-control-prev,
-#myCarousel .carousel-control-next {
-     display: none;
-}
-
-
-/** end clients section **/
-
-
-/** contact section **/
-
-.contact {
-     margin-top: 90px;
-}
-
-.contact .main_form h3 {
-     color: #4b4b4c;
-     font-size: 27px;
-     line-height: 30px;
-     text-align: center;
-     display: block;
-     font-weight: 600;
-     padding: 0;
-}
-
-#map {
-     height: 100%;
-     min-height: 732px;
-}
-
-.main_form {
-     position: absolute;
-     z-index: 999;
-     background: #fff;
-     padding: 40px 50px;
-     margin-top: 107px;
-}
-
-.main_form .contactus {
-     border-bottom: #111111 solid 1px;
-     margin-bottom: 25px;
-     width: 100%;
-     height: 57px;
-     background: transparent;
-     color: #4b4b4c;
-     font-size: 18px;
-     font-weight: normal;
-     border-top: inherit;
-     border-left: inherit;
-     border-right: inherit;
-}
-
-.main_form .contactusmess {
-     border-bottom: #111111 solid 1px;
-     margin-bottom: 25px;
-     width: 100%;
-     padding-top: 40px;
-     padding-bottom: 14px;
-     background: transparent;
-     color: #4b4b4c;
-     ;
-     font-size: 18px;
-     font-weight: normal;
-     border-top: inherit;
-     border-left: inherit;
-     border-right: inherit;
-}
-
-.send_btn {
-     background: #03cafc;
-     font-weight: 600;
-     font-size: 18px;
-     width: 100%;
-     color: #fff;
-     height: 50px;
-     border-radius: 30px;
-     margin-top: 20px;
-     transition: ease-in all 0.5s;
-     text-transform: uppercase;
-}
-
-.send_btn:hover {
-     background: #4b4b4c;
-     transition: ease-in all 0.5s;
-}
-
-#request *::placeholder {
-     color: #4b4b4c;
-     opacity: 1;
-}
-
-
-/** end contact section **/
 
 
 /** footer **/
 
 /* Footer nuevo */
 .custom-footer {
-  background: linear-gradient(to right, #da8b60, #9271b3);
+  background: linear-gradient(to right, #f2a677, #e7bf8e);
   color: #1e1e1e;
   padding: 50px 30px;
   font-family: 'Roboto', sans-serif;
@@ -1075,7 +871,7 @@ button {
 }
 
 .subscribe-form button {
-  background-color: #f2a677;
+  background-color: #000000;
   border: none;
   color: white;
   font-size: 15px;
@@ -1090,7 +886,7 @@ button {
 }
 
 .subscribe-form button:hover {
-  background-color: #e48c58;
+  background-color: #ff961e;
 }
 
 .follow-text {
