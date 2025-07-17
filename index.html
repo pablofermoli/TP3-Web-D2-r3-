@@ -19,7 +19,7 @@
       <!-- Responsive-->
       <link rel="stylesheet" href="css/responsive.css">
       <!-- fevicon -->
-      <link rel="icon" href="images/fevicon.png" type="image/gif" />
+      <link rel="icon" href="images/Favicon_amazfit-02.png" type="image/gif" />
       <!-- Scrollbar Custom CSS -->
       <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
       <!-- Tweaks for older IEs-->
@@ -39,6 +39,7 @@
       <!-- header -->
       <header>
          <!-- header inner -->
+         <div class id="header"></div>
          <div class="header">
             <div class="container-fluid">
                <div class="row">
@@ -58,7 +59,7 @@
                         </button>
                         <div class="collapse navbar-collapse" id="navbarsExample04">
                            <ul class="navbar-nav mr-auto">
-                              <li class="nav-item active">
+                              <li class="nav-item">
                                  <a class="nav-link" href="#watch-section">Producto</a>
                               </li>
                               <li class="nav-item">
@@ -91,6 +92,7 @@
 <section class="banner_main">
    <div class="container">
       <div class="banner_static">
+      <div class id="banner_static"></div>
          <div class="text-bg">
             <h1>
                <span class="blu regular block">Amazfit Active 2<br></span>
@@ -320,14 +322,14 @@
 <!-- end Seccion conectividad -->
 
       
-      <!--  footer -->
 <!-- Footer -->
- <footer class id="custom-footer">
-<footer class="custom-footer">
+<footer class="custom-footer" id="custom-footer">
   <div class="container">
-    <div class="row footer-content">
-      <!-- Columna 1: Contacto -->
-      <div class="col-md-4 col-sm-12 mb-4">
+    <div class="row footer-content align-items-start">
+      
+      <!-- Columna 1: Logo + Contacto -->
+      <div class="col-md-4 col-sm-12 mb-4 footer-contact">
+        <img src="images/amazfit_logo_1.png" alt="Amazfit Logo" class="footer-logo mb-3" />
         <h3>Contacto</h3>
         <p>Preguntas frecuentes</p>
         <p>5491127178465</p>
@@ -338,10 +340,11 @@
       <!-- Columna 2: Navegación -->
       <div class="col-md-3 col-sm-6 mb-4 footer-nav">
         <ul>
-          <li><a href="#">Inicio</a></li>
-          <li><a href="#">Características</a></li>
-          <li><a href="#">Reserva</a></li>
-          <li><a href="#">Calificación</a></li>
+          <li><a href="#header">Inicio</a></li>
+          <li><a href="#watch-section">Producto</a></li>
+          <li><a href="#about">Tecnología</a></li>
+          <li><a href="#looks">Looks</a></li>
+          <li><a href="#usos">Usos</a></li>
         </ul>
       </div>
 
@@ -361,9 +364,18 @@
         </div>
       </div>
     </div>
+
+    <!-- Línea inferior -->
+    <div class="row">
+      <div class="col-12 footer-bottom">
+        <p>Beluccia II 2025 – Comisión 2. T3 Landing Page - Pablo Fernandez Molina</p>
+      </div>
+    </div>
   </div>
 </footer>
-      <!-- end footer -->
+<!-- end Footer -->
+
+
 
       <!-- Javascript files-->
       <script src="js/jquery.min.js"></script>

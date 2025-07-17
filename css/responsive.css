@@ -164,8 +164,8 @@
         float: left;
     }
     .text-bg h1 {
-        font-size: 28px;
-        line-height: 42px;
+        font-size: 40px;
+        line-height: 50px;
     }
     .titlepage h2 {
         font-size: 29px;
@@ -221,13 +221,14 @@
         background: transparent;
     }
     .navigation .navbar-collapse {
-        background: #070404;
+        background: #bfac9f;
         padding: 20px;
         margin-top: 55px;
         position: absolute;
         width: 100%;
         margin-right: 20px;
         z-index: 999;
+        border-radius: 20px;
     }
     .navigation.navbar-dark .navbar-nav .nav-link {
         padding: 10px 0;
